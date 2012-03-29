@@ -1,0 +1,16 @@
+Dependencias:
+tinyxml
+imagemagick
+Blender 2.6 con ejecutable en /usr/bin
+
+
+Instrucciones de uso
+Compilar con make el raytracer
+modificar el fichero importanceMapBuilder.py y poner el path donde se encuentran los ficheros
+en el fichero config.cfg se puede modificar los ratios para darle mayor importancia a unas u otras caracterísitcas
+Cuidado con el ratio, ha de sumar 1! Fix Proximamente
+
+Para ejecutarlo
+blender fichero.blend -P importanceMapBuilder.py 
+
+como resultado se obtendrá una imagen png en el directorio de los ficheros

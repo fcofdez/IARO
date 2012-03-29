@@ -1,0 +1,11 @@
+#include "xmlExporter.hpp"
+#include "RayTracer.hpp"
+
+
+int main(int argc, char *argv[])
+{
+  std::vector<Triangle *> mesh;
+  mesh = readXMLMesh("/home/fran/ea.xml");
+  RayTracer * a = new RayTracer(mesh);
+  return 0;
+}
